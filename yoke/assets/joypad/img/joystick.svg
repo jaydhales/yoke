@@ -1,12 +1,3 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="-100 -100 200 200" preserveAspectRatio="none">
-    <defs><style>
-        .sector {stroke: none; fill: #00000020;}
-        .limit {stroke-width: 1px; fill: none;}
-    </style></defs>
-    <!-- 8 equally wide angular sectors -->
-    <path class="sector" d="M  38.27,100 H  100 V 38.27 L -100,-38.27 V -100 H -38.27 Z" />
-    <path class="sector" d="M -38.27,100 H -100 V 38.27 L  100,-38.27 V -100 H  38.27 Z" />
-    <!-- Primitive depth effect -->
-    <path class="limit" d="M  38.27,-100 L 0,0 L  38.27, 100 M -100,-38.27 L 0,0 L 100,-38.27" stroke="white" />
-    <path class="limit" d="M -38.27,-100 L 0,0 L -38.27, 100 M -100, 38.27 L 0,0 L 100, 38.27" stroke="black" />
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 100 100">
+  <circle cx="50" cy="50" r="45" fill="#CCCCCC" stroke="#444444" stroke-width="10"/>
 </svg>

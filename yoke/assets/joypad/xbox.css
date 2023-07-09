@@ -2,19 +2,21 @@
 
 /* This is for xbox 360 */
 #joypad {
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-areas:
-    /* The map below must match the number of rows and columns specified above.
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  row-gap: 10px;
+  column-gap: 6px;
+  grid-template-areas:
+          /* The map below must match the number of rows and columns specified above.
      * Controls may cover any rectangular area.
      * Do not try drawing non-rectangular shapes. */
-        "a9  a9  .   .   j2  j2  .   .   a8  a8  " 
-	".   .   b6  .   j2  j2  .   b5  .   .   "
-	"j1  j1  j1  .   .   .   .   .   b3  .   "
-	"j1  j1  j1  .   bg  bg  .   b4  .   b2  "
-	"j1  j1  j1  .   bs  bs  .   .   b1  .   "
-	;
-        /* Possible values:
+    "     a9   a9   b6   ..   ..   ..   ..   ..   ..   b5   a8   a8   "
+    "     ..   dp   dp   ..   bm   ..   ..   ..   ..   ..   b3   ..   "
+    "     ..   dp   dp   ..   ..   t1   t1   ..   ..   b4   ..   b2   "
+    "     j1   j1   j1   ..   ..   t1   t1   j2   j2   j2   b1   ..   "
+    "     j1   j1   j1   ..   ..   ..   ..   j2   j2   j2   ..   ..   "
+    "     j1   j1   j1   ..   bg   bs   ..   j2   j2   j2   ..   ..   ";
+  /* Possible values:
          * j1, j2, j3... for joystick (returns to center when released);
          * s1, s2, s3... for sticky joystick (stays in place when released);
          * t1, t2, t3... for thumb joystick (returns to center, and can be
